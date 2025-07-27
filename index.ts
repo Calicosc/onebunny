@@ -28,7 +28,7 @@ export default definePlugin({
     start() {
         fetch("https://raw.githubusercontent.com/adryd325/oneko.js/c4ee66353b11a44e4a5b7e914a81f8d33111555e/oneko.js")
             .then(x => x.text())
-            .then(s => s.replace("./oneko.gif", "https://raw.githubusercontent.com/adryd325/oneko.js/14bab15a755d0e35cd4ae19c931d96d306f99f42/oneko.gif")
+            .then(s => s.replace("https://github.com/Calicosc/onebunny/blob/main/oneko.gif", "https://raw.githubusercontent.com/adryd325/oneko.js/14bab15a755d0e35cd4ae19c931d96d306f99f42/oneko.gif")
                 .replace("(isReducedMotion)", "(false)"))
             .then(eval);
     },
